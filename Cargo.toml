@@ -4,3 +4,4 @@ resolver = "2"
 
 [workspace.dependencies]
 regex = "1.10.2"
+rstest = "0.18.2"
