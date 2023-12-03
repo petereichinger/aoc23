@@ -3,7 +3,6 @@ pub fn part02(input: &str) -> i64 {
         .lines()
         .into_iter()
         .map(|l| replace_line_numbers(l))
-        .inspect(|l| println!("{}", l))
         .map(|l| {
             (
                 l.chars().find(|c| c.is_numeric()),
@@ -23,7 +22,7 @@ pub fn part02(input: &str) -> i64 {
 fn replace_line_numbers(mut line: &str) -> String {
     let mut result = String::new();
 
-    while let Some((offset, len, number)) = find_first_number(line) {
+    while let Some((offset, number)) = find_first_number(line) {
         result.push_str(&line[0..offset]);
         result.push_str(number);
         line = &line[(offset + 1)..];
@@ -46,10 +45,10 @@ const PATTERNS: [(&str, &str); 9] = [
     ("nine", "9"),
 ];
 
-fn find_first_number(line: &str) -> Option<(usize, usize, &str)> {
+fn find_first_number(line: &str) -> Option<(usize, &str)> {
     PATTERNS
         .iter()
-        .filter_map(|&(pattern, value)| line.find(pattern).map(|m| (m, pattern.len(), value)))
+        .filter_map(|&(pattern, value)| line.find(pattern).map(|m| (m, value)))
         .min_by(|f, s| f.0.cmp(&s.0))
 }
 

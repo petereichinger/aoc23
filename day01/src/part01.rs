@@ -17,13 +17,3 @@ pub fn part01(input: &str) -> i64 {
 
     numbers
 }
-
-#[cfg(test)]
-mod tests {
-
-    use super::*;
-    #[test]
-    fn it_works() {
-        assert!(true)
-    }
-}
