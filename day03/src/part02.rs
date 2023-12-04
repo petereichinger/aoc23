@@ -1,4 +1,4 @@
-use std::{collections::HashMap, ops::RangeInclusive, thread::current};
+use std::{collections::HashMap, ops::RangeInclusive};
 
 use itertools::Itertools;
 use library::grid2d::{self, Grid2D};
