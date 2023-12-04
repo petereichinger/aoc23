@@ -1,7 +1,8 @@
 [workspace]
-members = ["day*"]
+members = ["day*", "library"]
 resolver = "2"
 
 [workspace.dependencies]
 regex = "1.10.2"
 rstest = "0.18.2"
+itertools = "0.12.0"
