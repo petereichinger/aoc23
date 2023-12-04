@@ -1,4 +1,4 @@
-pub fn part01(input: &str) -> i64 {
+pub fn part(input: &str) -> i64 {
     todo!()
 }
 
@@ -8,6 +8,7 @@ mod tests {
 
     #[test]
     fn it_works() {
-        assert!(true)
+        let input = "";
+        assert_eq!(part(input), 0)
     }
 }
