@@ -1,6 +1,9 @@
+use common:*;
+
 pub fn part(input: &str) -> i64 {
     todo!()
 }
+
 #[cfg(test)]
 mod tests {
     use super::*;
