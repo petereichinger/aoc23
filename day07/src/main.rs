@@ -1,7 +1,7 @@
 mod part01;
 mod part02;
 
-mod game_part_1;
+mod game;
 
 pub const INPUT: &str = include_str!("input.txt");
 

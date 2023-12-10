@@ -1,6 +1,6 @@
 use itertools::Itertools;
 
-use super::game_part_1::*;
+use super::game::*;
 
 pub fn part(input: &str) -> i64 {
     let games = input.lines().map(|l| Game::new(l)).collect_vec();
