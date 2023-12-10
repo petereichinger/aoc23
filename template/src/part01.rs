@@ -1,4 +1,4 @@
-use common:*;
+use super::common::*;
 
 pub fn part(input: &str) -> i64 {
     todo!()
